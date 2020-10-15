@@ -56,7 +56,7 @@ public void speak(double r,String t) {
 	}
 ```
 ## 实验结果
-![alt tupian](https://user.qzone.qq.com/927092933/infocenter)
+![alt console](https://m.qpic.cn/psc?/V50ini880vFPiW2LYxFK2RoQRD3UEErn/bqQfVz5yrrGYSXMvKr.cqdZezMYs7BOq0Uw*NN4aO68vINbyeSSCoyNEiT25Ru2wkbx5VPMhehw*F3R9wc6ujVmdsprlT0gH87fw2fyACnA!/b&bo=ZwGfAAAAAAADB9s!&rf=viewer_4)
 
 ## 实验感想
 通过本次实验学会了在其他类中调用类中的属性，以及给类中的属性赋值/取值，定义有参，无参构造方法并进行调用，基本数据类型的具体的使用情况，不同访问控制符对访问的控制情况等，但是目前使用还不熟练，还需多练习。
