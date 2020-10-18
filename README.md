@@ -1,5 +1,6 @@
 # -Java-
-Java课程作业项目
+2020322063  
+计G201 张迪
 ## 实验内容
 用类描述计算机中CPU的速度和硬盘的容量。要求Java应用程序有4个类，分别是PC,CPU,HardDisk,Test,Test是主类。    
 1.PC类中设置几个属性，创建这些属性的get，set方法，用来传值；传创建两个构造方法用来初始化属性的值；写一个普通方法，用来输出相关内容。  
@@ -19,28 +20,35 @@ Java课程作业项目
 3.HardDisk类中定义amount，size，open，生成setget方法，定义hello方法，定义sorry方法定义一个返回boolean类型的iOpen方法并传入参数，参数控制访问hello方法，sorry方法
 PC类中定义CPU cpu，HardDisk HD，price，colo生成setget方法
 ## 核心方法
-1. 方法1 构造方法
+1. 方法1 属性的类型多样化和构造方法
 ```
-public CPU() {
+	public class CPU {
+	private int speed;
+	public double rate;//速率
+	protected String time;//时间
+	public CPU() {
 		
 	}//构造方法1
 	public CPU(double r,String t) {
-		//super();
 		this.rate=r;
 		this.time=t;
 	}//构造方法2
 ```
-2. 方法2 set get方法
+2. 方法2 定义属性的修饰符多样化
 ```
-public int getSpeed() {
-		return speed;
+public class CPU {
+	private int speed;
+	public double rate;//速率
+	protected String time;//时间
 	}
-
-	public void setSpeed(int m) {
-		this.speed = m;
+	
+public class HardDisk {
+	private int amount;
+	private double size;//尺寸
+	boolean open;
 	}
 ```
-3.方法3 普通方法
+3.方法3 逻辑判断
 ```
 public void speak(double r,String t) {
 		CPU c=new CPU();//实例化
@@ -53,6 +61,43 @@ public void speak(double r,String t) {
 			o="我是低端处理器";
 		}
 		System.out.println(o+"，"+"我已工作： "+c.getTime());
+	}
+
+	if(disk.iOpen(true)) {
+			disk.hello();
+		}else {
+			disk.sorry();
+		}
+```
+4.核心main方法
+```
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		CPU cpu=new CPU();//创建CPU对象
+		cpu.setSpeed(2200);
+		HardDisk disk=new HardDisk();//创建HardDisk对象
+		disk.setAmount(200);
+		PC pc=new PC();//创建PC对象
+		pc.setCpu(cpu);
+		pc.setHD(disk);
+		pc.show();
+		PC pc2=new PC(6000, 100);
+		cpu.speak(1.8, "368天");
+		if(disk.iOpen(true)) {
+			disk.hello();
+		}else {
+			disk.sorry();
+		}
+	}
+```
+5.定义含有返回值的方法
+```
+public class HardDisk {
+public boolean iOpen(boolean o) {
+		HardDisk h=new HardDisk();
+		h.setOpen(o);
+		return h.isOpen();	
+	}
 	}
 ```
 ## 实验结果
