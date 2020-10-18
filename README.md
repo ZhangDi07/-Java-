@@ -15,10 +15,23 @@
 5.熟悉通过不同的方法来给属性赋值  
 6.掌握不同的修饰符对包的访问控制权限
 ## 实验过程
-1.在capacity包下新建PC,CPU,HardDisk,Test4个类，其中Test加上main方法；  
-2.CPU类中定义speed，rate,time并生成set,get方法,新建无参构造方法和有参构造方法，新建无返回值有r,t，两个参数的speak（）方法并在其中实例化当前类并加以逻辑判断；  
-3.HardDisk类中定义amount，size，open，生成set get方法，定义一个hello方法，定义一个sorry方法，定义一个返回boolean类型的iOpen方法并传入参数，参数控制访问hello方法，sorry方法  
-4.PC类中定义CPU cpu，HardDisk HD，price，colo并生成set get方法，
+1.在CPU类中定义一个int类型的speed，double类型的rate，String 类型的 time，定义一个无参构造方法，定义一个有参的构造方法其中参数r将值传给rate，参数t将值传给time，
+生成setget方法  
+定义一个speak方法包含两个参数r,t这两个参数将值赋给CPU的构造方法  
+CPU的构造方法将值传给rate和time通过CPU的get方法可以得到rate和time这两个参数的值  
+通过rate的值进行判断如果值大于1.60将"我是高性能处理器"赋给o反之将"我是低端处理器"赋给o最后在控制台进行输出    
+2.在HardDisk 类中定义一个int类型的amount; double类型的size，boolean 类型的 open  
+生成setget方法  
+定义一个返回boolean类型的iOpen方法包含一个boolean类型的参数,将这个参数的值存到类中，再返回它的值  
+定义一个hello方法用于设置硬盘的尺寸大小  
+定义一个sorry方法用于输出错误信息      
+3.在PC类中定义一个有参构造方法用于给speed和amount赋值并打印输出  
+定义一个show方法得到CPU的信息和硬盘的信息并设置值有关pc的信息并通过控制台打印出结果    
+4.在test类中通过set方法给cpu的speed和HardDisk的amount赋值  
+实例化pc将cpu对象和disk对象设置到pc中然后调用show方法来进行展示  
+实例化pc调用构造方法并设置参数  
+cpu调用speak方法并设置参数  
+设置判断条件为HardDisk中iOpen方法的返回值，其中参数是true则调用hello方法输出并进行打印
 ## 核心方法
 1. 方法1 属性的类型多样化和构造方法
 ```
