@@ -16,7 +16,7 @@
 6.掌握不同的修饰符对包的访问控制权限
 ## 实验过程
 1.在capacity包下新建PC,CPU,HardDisk,Test4个类，其中Test加上main方法；  
-2.CPU类中定义speed，rate,time并生成set,get方法新建无参构造方法和有参构造方法，新建无返回值有r,t，两个参数的speak（）方法并在其中实例化当前类并加以逻辑判断；  
+2.CPU类中定义speed，rate,time并生成set,get方法,新建无参构造方法和有参构造方法，新建无返回值有r,t，两个参数的speak（）方法并在其中实例化当前类并加以逻辑判断；  
 3.HardDisk类中定义amount，size，open，生成setget方法，定义hello方法，定义sorry方法定义一个返回boolean类型的iOpen方法并传入参数，参数控制访问hello方法，sorry方法
 PC类中定义CPU cpu，HardDisk HD，price，colo生成setget方法
 ## 核心方法
