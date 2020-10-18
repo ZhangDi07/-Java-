@@ -30,14 +30,12 @@ public class HardDisk {
 	//方法
 	//1--true...开   -1--fasle..关
 	public boolean iOpen(boolean o) {
-		HardDisk h=new HardDisk();
-		h.setOpen(o);
-		return h.isOpen();	
+		this.setOpen(o) ;
+		return this.isOpen();	
 	}
 	public void hello() {
-		HardDisk ha=new HardDisk();
-		ha.setSize(6.00);
-		System.out.println("你好我是硬盘我是大小为"+ha.getSize());
+		this.setSize(6.00);
+		System.out.println("你好我是硬盘我是大小为"+this.getSize());
 	}
 	public void sorry() {
 		System.out.println("error 接触不良");
@@ -45,3 +43,4 @@ public class HardDisk {
 
 
 }
+
